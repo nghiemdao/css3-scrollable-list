@@ -1,0 +1,38 @@
+.container {
+  width:100%;
+  overflow:hidden;
+}
+.list{
+  display:block;
+  position:relative;
+  width:200%;
+  height:160px;
+  font-size: 0;
+  -webkit-animation: move 15s infinite;
+  animation:move 15s linear infinite; 
+}
+
+.img {
+  width:10%;
+  height:100%;
+  background-color:#000;
+  float:left;
+}
+
+.img:nth-child(5n+1) {
+  background-color: #f00;
+}
+.img:nth-child(5n+2) {
+  background-color: #ff0;
+}
+.img:nth-child(5n+3) {
+  background-color: #f0f;
+}
+.img:nth-child(5n+4) {
+  background-color: #00f;
+}
+
+@keyframes move{
+  0% {left:0;}
+  100% {left:-100%;}
+}
