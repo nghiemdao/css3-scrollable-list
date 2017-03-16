@@ -8,7 +8,9 @@
   width:200%;
   height:160px;
   font-size: 0;
-  -webkit-animation: move 15s infinite;
+  -webkit-animation: move 15s linear infinite;
+  -moz-animation: move 15s linear infinite;
+  -o-animation: move 15s linear infinite;
   animation:move 15s linear infinite; 
 }
 
@@ -32,7 +34,22 @@
   background-color: #00f;
 }
 
+@-webkit-keyframes move {
+  0% {left: 0;}
+  100% {left: -100%;}
+}
+
+@-moz-keyframes move {
+  0% {left: 0;}
+  100% {left: -100%;}
+}
+
+@-o-keyframes move {
+  0% {left: 0;}
+  100% {left: -100%;}
+}
+
 @keyframes move{
-  0% {left:0;}
-  100% {left:-100%;}
+  0% {left: 0;}
+  100% {left: -100%;}
 }
